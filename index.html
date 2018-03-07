@@ -285,6 +285,7 @@ $(".nav>a").click(function(){
     }else if(poi == "block"){
         $("#gnb").animate({left:"-100%"});
         $("#gnb").fadeOut(200);
+        $(".depth2").slideUp();
 
     }
 });
@@ -325,12 +326,14 @@ $("#gnb>ul>li>a").click(function(){
     }else if(two == "block"){
         dis.slideUp();
     }
+    return false;
 });
 
 /* 좋아요 버튼 */
 
 $(".btn>span.good").click(function(){
     $(this).toggleClass("red");
+    return false;
 
 
 });
@@ -343,18 +346,21 @@ var count = 0;
 $("#clickme1").click(function(){
     count += 1;
     $("#clickme1").html("추천:" + count);
+    return false;
 });
 
 var count2 = 0;
 $("#clickme2").click(function(){
     count2 += 1;
     $("#clickme2").html("추천:" +count2);
+    return false;
 });
 
 var count3 = 0;
 $("#clickme3").click(function(){
     count3 += 1;
     $("#clickme3").html("추천:" + count3);
+    return false;
 });
 
 $(".selbox").change(function(){
@@ -362,6 +368,7 @@ $(".selbox").change(function(){
     $("#"+$(this).val()).show();
     /* 내가 선택한 옵션메뉴에 관련되는 value의 값과 일치하는 아이디 명을 가지고 있는 
     메뉴만 나타내도록 해주는 구성 */
+
 });
 
 $("#fnav>ul>li>a").click(function(){
@@ -379,6 +386,12 @@ $("#fnav>ul>li>a").click(function(){
     }
     return false;
 });
+
+$("#gall1 a").click(function(){
+    
+    $(this).find(".conts").slideToggle();
+    return false;
+})
 
 </script>
 </html>

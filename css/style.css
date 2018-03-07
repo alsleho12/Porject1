@@ -73,7 +73,7 @@ header, main, footer{
     left:-100%;
     background: beige;
     display:none;
-    z-index: 99;
+    z-index: 999;
 }
 
 
@@ -191,7 +191,7 @@ header, main, footer{
 }
 
 .good{
-    color:olivedrab;
+    color:blue;
     font-size: 20px;
 }
 
@@ -332,6 +332,7 @@ address, .knum, .cpy{
     color: #fff;
     padding: 5px 0;
     margin-left:20px;
+    line-height: 21px;
 
 }
 
@@ -353,4 +354,8 @@ address, .knum, .cpy{
     margin: 0 auto;
     top:50%;
     transform: translateY(-50%);
+}
+
+.conts{
+    display:none;
 }
